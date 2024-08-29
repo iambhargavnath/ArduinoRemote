@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/helpBtn"
+                    android:text=" ? "
+                    android:textColor="#000000"
+                    android:textSize="24dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/circle"
+                    android:layout_marginRight="10dp"/>
+                <ImageButton
+                    android:id="@+id/bluetoothBtn"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_baseline_bluetooth_24"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:scaleType="fitCenter"
+                    android:tint="#ffffff"
+                    android:background="@drawable/btbtn"
+                    android:layout_margin="10dp"/>
+
+                <Button
+                    android:id="@+id/infoBtn"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/circle"
+                    android:fontFamily="sans-serif-black"
+                    android:text=" i "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="#000000"
+                    android:textSize="24dp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:gravity="center">
+
+                <ToggleButton
+                    android:id="@+id/aBtn"
+                    android:textOff="A"
+                    android:textOn="A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="18dp"
+                    android:background="@drawable/lightbtn"
+                    android:textColor="#0026FF"
+                    android:textSize="24dp" />
+
+                <ToggleButton
+                    android:id="@+id/bBtn"
+                    android:textOff="B"
+                    android:textOn="B"
+                    android:background="@drawable/lightbtn"
+                    android:textColor="#0026FF"
+                    android:textSize="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:gravity="center">
+                <ToggleButton
+                    android:id="@+id/cBtn"
+                    android:textOff="C"
+                    android:textOn="C"
+                    android:background="@drawable/lightbtn"
+                    android:textColor="#0026FF"
+                    android:textSize="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="18dp"/>
+                <ToggleButton
+                    android:id="@+id/dBtn"
+                    android:textOff="D"
+                    android:textOn="D"
+                    android:background="@drawable/lightbtn"
+                    android:textColor="#0026FF"
+                    android:textSize="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="top">
+                    <ImageButton
+                        android:id="@+id/leftIndicator"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="30dp"
+                        android:scaleType="fitCenter"
+                        android:tint="#0000FF"
+                        android:background="@drawable/bluecircle"/>
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/upBtn"
+                    android:src="@drawable/ic_baseline_arrow_drop_up_24"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitCenter"
+                    android:tint="#000000"
+                    android:background="@drawable/circle"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="top">
+                    <ImageButton
+                        android:id="@+id/rightIndicator"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:scaleType="fitCenter"
+                        android:tint="#0000FF"
+                        android:background="@drawable/bluecircle"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/leftBtn"
+                    android:src="@drawable/ic_baseline_arrow_left_24"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitCenter"
+                    android:tint="#000000"
+                    android:background="@drawable/circle"
+                    android:layout_marginRight="30dp"/>
+                <ImageButton
+                    android:id="@+id/rightBtn"
+                    android:src="@drawable/ic_baseline_arrow_right_24"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitCenter"
+                    android:tint="#000000"
+                    android:background="@drawable/circle"
+                    android:layout_marginLeft="30dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="bottom">
+                    <ImageButton
+                        android:id="@+id/uTurn"
+                        android:src="@drawable/ic_baseline_redo_24"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="30dp"
+                        android:padding="5dp"
+                        android:scaleType="fitCenter"
+                        android:tint="#0000FF"
+                        android:background="@drawable/bluecircle"/>
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/downBtn"
+                    android:src="@drawable/ic_baseline_arrow_drop_down_24"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitCenter"
+                    android:tint="#000000"
+                    android:background="@drawable/circle" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="bottom">
+                    <Button
+                        android:id="@+id/reverseBtn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:text="R"
+                        android:textColor="#0000FF"
+                        android:textSize="24dp"
+                        android:background="@drawable/bluecircle"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/warningBtn"
+                    android:src="@drawable/ic_baseline_warning_24"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitCenter"
+                    android:padding="10dp"
+                    android:tint="#000000"
+                    android:background="@drawable/warning_btn" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="-60dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            app:tint="#0044FF"
+            android:src="@drawable/arduino_remote_text"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+
+</LinearLayout>
